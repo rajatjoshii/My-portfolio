@@ -1,0 +1,21 @@
+<div class="container">
+    <span class="title">Work Experience</span>
+    <div class="experience-container">
+        <div class="buttons-column">
+            <button mat-stroked-button (click)="loadExperience('googleTVC')">GlobalLogic - Google TVC</button>
+            <button mat-stroked-button (click)="loadExperience('odigo')">Globallogic - Odigo</button>
+            <button mat-stroked-button (click)="loadExperience('ongc')">ONGC</button>
+          </div>
+          <div class="content-column">
+            <ng-container *ngIf="currentExperience === 'googleTVC'">
+              <app-google-tvc-experience></app-google-tvc-experience>
+            </ng-container>
+            <ng-container *ngIf="currentExperience === 'odigo'">
+              <app-odigo-experience></app-odigo-experience>
+            </ng-container>
+            <ng-container *ngIf="currentExperience === 'ongc'">
+              <app-ongc-experience></app-ongc-experience>
+            </ng-container>
+          </div>
+    </div>
+  </div>

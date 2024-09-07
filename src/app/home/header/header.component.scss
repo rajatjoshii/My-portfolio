@@ -1,0 +1,69 @@
+.header{
+    display: flex; 
+    height: 65vh;
+}
+.header-text{
+    flex:1; 
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px; 
+    padding-top: 100px;
+}
+.header-animation{
+    margin-right: 80px;
+    display: flex;
+    flex-direction: column;
+}
+.margin-bottom-small{
+    margin-bottom: 0.25rem;
+}
+.margin-bottom-medium{
+    margin-bottom: 0.5rem;
+}
+.margin-top-small{
+    margin-top: 0.25rem;
+}
+.margin-top-medium{
+    margin-top: 0.5rem;
+}
+.font-medium-1 {
+    font-size: 1.5rem;
+}
+.font-medium-2 {
+    font-size: 2rem;
+}
+.font-large{
+    font-size: 5rem;
+}
+.line-height-1{
+    line-height: 1;
+}
+.line-height-2{
+    line-height: 2;
+}
+.letter-spacing{
+    letter-spacing: 0.05rem;
+}
+.small-icons{
+    height: 2rem;
+    padding-right: 0.75rem;
+}
+.blink{
+    animation: blink 1s infinite;
+}
+@keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+button{
+    margin-right: 20px;
+}
+.button-info{
+    align-self: center;
+    margin-right: 150px;
+}
+//this will apply the bcg color in the entire application. If you dont want this then wrap the ng-deep in :host
+::ng-deep button:hover{
+    background-color: #D699F7;
+}
+

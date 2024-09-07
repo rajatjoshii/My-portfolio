@@ -1,0 +1,38 @@
+.border-bio{
+    transform: rotate(180deg);
+}
+.profile-section{
+    height: 500px;
+    background-color: #7C3AED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px;
+    .info{
+        max-width: 500px;
+        border-radius: 10px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+    }
+    .image-container {
+        max-width: 250px; 
+        text-align: center;
+      }
+      
+      .image-container img {
+        max-width: 100%; 
+        height: auto; 
+        border-radius: 10px;
+      }
+}
+.bio {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto; /* Enable scrolling */
+}
+.letter-spacing{
+    letter-spacing: 0.05rem;
+}

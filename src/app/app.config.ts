@@ -3,7 +3,15 @@ import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideClientHydration } from '@angular/platform-browser';
+import { provideLottieOptions } from 'ngx-lottie';
+import player from 'lottie-web';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+
 
 export const appConfig: ApplicationConfig = {
-  providers: [provideRouter(routes), provideClientHydration()]
+  providers: [provideRouter(routes), provideClientHydration(),
+    provideLottieOptions({
+      player: () => player,
+    }), provideAnimationsAsync(), provideAnimationsAsync(),
+  ]
 };

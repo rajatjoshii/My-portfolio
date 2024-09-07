@@ -1,0 +1,30 @@
+.profile-section{
+    padding: 20px;
+    background-color: #7C3AED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    gap: 200px;
+    .info{
+        border-radius: 25px;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        padding: 40px;
+        width: 100%;
+        .image-align{
+            display: flex;
+            gap: 70px;
+        }
+    }
+}
+.bio {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: auto; /* Enable scrolling */
+}
+.letter-spacing{
+    letter-spacing: 0.05rem;
+}
