@@ -1,28 +1,66 @@
 .container{
     display: flex;
     flex-direction: column;
-    padding: 50px 50px 50px 200px;
+    padding: 50px 50px 50px 150px;
+    align-items: center;
+    gap: 50px;
 
 }
 .experience-container {
     display: flex;
-    gap: 50px;
+    gap: 150px;
+    width: 100%;
   }
+
   .title{
-    line-height: 5;
+    line-height: 1.5;
     color: #21C55D;
     font-size: 50px;
     font-weight: 500;
+    margin-bottom: 30px;
+    text-align: center;
   }
   .buttons-column {
-    width: 20%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 50px;
-  }
+    justify-content: space-evenly;
+    gap: 10px; /* Add some space between the buttons */
+    flex-wrap: wrap;
+}
+
+button[mat-stroked-button] {
+    padding: 12px 24px; /* Add padding around the text */
+    font-size: 1rem; /* Font size to ensure readability */
+    line-height: 1.2; /* Adjust line-height for consistent spacing */
+    width: 100%; /* Make buttons take up full available width */
+    text-align: left; /* Align text to the left */
+    white-space: nowrap; /* Prevent text from wrapping to the next line */
+    overflow: hidden; /* Ensure no text overflow */
+    text-overflow: ellipsis; /* Show ellipsis if text overflows */
+}
   
   .content-column {
-    width: 80%;
+    width: 100%;
     padding-left: 20px;
+  }
+  @media (max-width: 1200px){
+    button[mat-stroked-button] {
+      font-size: 0.9rem; /* Adjust font size for smaller screens */
+      padding: 10px 16px; /* Adjust padding for smaller screens */
+      width: 100%; /* Ensure buttons take full width on mobile */
+  }
+    .experience-container{
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+    .buttons-column{
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+    .container{
+      padding: 20px 20px 50px 20px;
+      // align-items: center;
+      gap: 0px;
+    }
   }

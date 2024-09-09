@@ -1,23 +1,19 @@
-.border-bio{
-    transform: rotate(180deg);
-}
+
 .profile-section{
-    height: 500px;
-    background-color: #7C3AED;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 200px;
     .info{
-        max-width: 500px;
+        max-width: 400px;
         border-radius: 10px;
         background-color: white;
         display: flex;
         flex-direction: column;
-        padding: 20px;
+        padding: 30px;
     }
     .image-container {
-        max-width: 250px; 
+        max-width: 350px; 
         text-align: center;
       }
       
@@ -31,8 +27,55 @@
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding: 50px;
+    background-color: #7C3AED;
+    padding-top: 50px;
     overflow: auto; /* Enable scrolling */
 }
+
 .letter-spacing{
     letter-spacing: 0.05rem;
 }
+
+.title-1{
+    @extend .letter-spacing;
+    font-size: 2.5rem; line-height: 1;
+}
+.title-2{
+    @extend .letter-spacing;
+    margin-top: 10px;
+    font-size: 1rem; line-height: 2; color: #64748B; font-weight: 600;
+}
+.description{
+    @extend .letter-spacing;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+@media (max-width: 1200px) {
+    .profile-section {
+        flex-direction: column; /* Stack text and image vertically */
+        padding: 20px; /* Reduce padding for smaller screens */
+        gap: 20px; /* Reduce gap between text and image */
+    }
+
+    .info {
+        max-width: 100%; /* Allow the text container to take full width */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .image-container {
+        max-width: 100%; /* Let the image container take full width */
+    }
+    .title-1{
+        font-size: 1.5rem; line-height: 2;
+    }
+    .title-2{
+        font-size: 0.8rem; line-height: 1.5; color: #64748B; font-weight: 600;
+    }
+    .description{
+        line-height: 1.5;
+    }
+}
+
+
+

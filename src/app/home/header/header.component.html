@@ -1,34 +1,39 @@
-<div class="header">
-    <div class="header-text">
-      <span class="font-medium-1 line-height-2 letter-spacing">Hi! my name is </span>
-      <div class="margin-bottom margin-top"></div>
-      <span class="font-large line-height-1">Rajat</span>
-      <div class="margin-bottom-medium"></div>
-      <span class="font-medium-2 line-height-2 letter-spacing">I'm a multitalented <span style="color: #21C55D">{{typewriter}}<span class="blink">|</span></span>
-    </span>
-    <div class="margin-bottom-medium"></div>
-      <span style="display: flex;">
-        <!-- <a href="">
-          <img class="small-icons" src="./../../../assets/png/github-icon.png" alt="github-icon">
-        </a> -->
-        <a href="https://www.linkedin.com/in/rajat-joshi-b00b52177/">
-          <img class="small-icons" src="./../../../assets/png/linkedin-icon.png" alt="linkedin-icon">
-        </a>
-        <a href="https://rajat-joshi-cv.s3.ap-south-1.amazonaws.com/RajatJoshiResume.pdf" target="_blank" rel="noopener noreferrer">
-          <img class="small-icons" src="./../../../assets/png/resume-icon.png" alt="resume-icon">
-        </a>
+<section class="header-container">
+  <div class="header">
+      <div class="header-text">
+        <span class="name-metadata">Hi! my name is </span>
+        <div class="margin-bottom margin-top"></div>
+        <span class="font-large line-height-1">Rajat</span>
+        <div class="margin-bottom-medium"></div>
+        <span class="typewriter">I'm a multitalented <span style="color: #21C55D">{{typewriter}}<span class="blink">|</span></span>
       </span>
-    </div>
-    <div class="header-animation">
-      <iframe src="https://lottie.host/embed/d0e120df-85f0-4fe0-a381-c61239ff3a97/WtvWJFcjGM.json" width="500" height="500" frameborder="0"></iframe>
-    </div>
-</div>
-<div style="display: flex; justify-content: space-between;">
-  <span class="font-medium-1" style="margin-left: 100px;">Scroll to learn more <img style="height: 40px;transform: translate(0px, 15px)" class="small-icons" src="../../../assets/png/mouse-cursor.png" alt=""></span>
-  <div class="button-info margin-top-medium">
-    <button mat-stroked-button (click)="onBioButtonClick()">Bio</button>
-    <button mat-stroked-button (click)="onExperienceButtonClick()">Experience</button>
-    <button mat-stroked-button>Projects</button>
-  </div>  
+      <div class="margin-bottom-medium"></div>
+        <span style="display: flex;">
+          <!-- <a href="">
+            <img class="small-icons" src="./../../../assets/png/github-icon.png" alt="github-icon">
+          </a> -->
+          <a href="https://www.linkedin.com/in/rajat-joshi-b00b52177/">
+            <img class="small-icons" src="./../../../assets/png/linkedin-icon.png" alt="linkedin-icon">
+          </a>
+          <a href="https://rajat-joshi-cv.s3.ap-south-1.amazonaws.com/RajatJoshiResume.pdf" target="_blank" rel="noopener noreferrer">
+            <img class="small-icons" src="./../../../assets/png/resume-icon.png" alt="resume-icon">
+          </a>
+        </span>
+      </div>
+      <div class="header-animation">
+        <iframe src="https://lottie.host/embed/d0e120df-85f0-4fe0-a381-c61239ff3a97/WtvWJFcjGM.json" width="500" height="500" frameborder="0"></iframe>
+      </div>
+  </div>
+  <div class="header-buttons">
+    <span class="font-medium-1">Scroll to learn more <img style="height: 40px;transform: translate(0px, 15px)" class="small-icons" src="../../../assets/png/mouse-cursor.png" alt=""></span>
+    <div class="button-info margin-top-medium">
+      <button mat-stroked-button (click)="onBioButtonClick()">Bio</button>
+      <button mat-stroked-button (click)="onExperienceButtonClick()">Experience</button>
+      <button mat-stroked-button>Projects</button>
+    </div>  
+  </div>
+</section>
+<div class="border-bio">
+  <img src="./../assets/svg/bottom-border.svg" alt="border separation between header and bio">
 </div>
 
