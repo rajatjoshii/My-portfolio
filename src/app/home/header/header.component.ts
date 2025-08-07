@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
   type$!: Observable<string>;
   typewriter: string = "";
   options: AnimationOptions = {
-    path: 'assets/lottie/header.json'
+    path: 'https://lottie.host/d0e120df-85f0-4fe0-a381-c61239ff3a97/WtvWJFcjGM.json'
   };
   @Output() navigateToBio = new EventEmitter<void>();
   @Output() navigateToExperience = new EventEmitter<void>();
