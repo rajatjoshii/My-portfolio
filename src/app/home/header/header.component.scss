@@ -42,13 +42,13 @@
     flex-direction: column;
 }
 
-.header-animation iframe {
+.header-animation ng-lottie {
     width: 500px;
     height: 500px;
 }
 
 @media (max-width: 768px) {
-    .header-animation iframe {
+    .header-animation ng-lottie {
         width: 300px; /* Smaller width for mobile */
         height: 300px; /* Smaller height for mobile */
         margin: 0 auto; /* Center the animation */

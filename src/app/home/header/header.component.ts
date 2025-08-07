@@ -4,11 +4,12 @@ import { TypewriterService } from './typewriter.service';
 import {MatIconModule} from '@angular/material/icon';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatButtonModule} from '@angular/material/button';
+import { AnimationOptions, LottieComponent } from 'ngx-lottie';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [MatButtonModule, MatIconModule, MatDividerModule,
+  imports: [MatButtonModule, MatIconModule, MatDividerModule, LottieComponent,
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
@@ -16,6 +17,9 @@ import {MatButtonModule} from '@angular/material/button';
 export class HeaderComponent implements OnInit {
   type$!: Observable<string>;
   typewriter: string = "";
+  options: AnimationOptions = {
+    path: 'https://lottie.host/d0e120df-85f0-4fe0-a381-c61239ff3a97/WtvWJFcjGM.json'
+  };
   @Output() navigateToBio = new EventEmitter<void>();
   @Output() navigateToExperience = new EventEmitter<void>();
   constructor(readonly typewriterService: TypewriterService){}
