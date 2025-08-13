@@ -1,4 +1,6 @@
 <div class="container">
+  <p-slider [(ngModel)]="sliderValue" [attr.aria-label]="'The value of the slider is now ' + sliderValue"></p-slider>
+  <p>Slider value: {{ sliderValue }}</p>
   <app-header id="header" (navigateToBio)="onScrollToBio()" (navigateToExperience)="onScrollToExperience()"></app-header>
   <app-bio id="bio"></app-bio>
   <app-experience id="experience"></app-experience>
